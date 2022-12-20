@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">myRobot</string>
+
+    <string name="share">Share</string>
+
+    <string name="input_address">Address</string>
+    <string name="input_port">Port</string>
+    <string name="input_username">Username</string>
+    <string name="input_password">Password</string>
+    <string name="button_pubkey">Share RSA public key</string>
+    <string name="button_start">К управлению!</string>
+
+    <string name="command_hint">Shell command</string>
+
+    <string name="error_title">Ошибка соединения</string>
+    <string name="error_disconnect">Прервать</string>
+    <string name="error_not_connected">Связь не установлена</string>
+
+    <string name="snackbar_intent_failed">Failed to share log</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="title_activity_control">ControlActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_to_fragment_shell">Назад</string>
+    <string name="stop_machine">Остановить</string>
+    <string name="add_btn">add</string>
+    <string name="del">DEL</string>
+    <string name="to_control">Control</string>
+    <string name="Commands">Вводимые команды</string>
+    <string name="hint_command1">Новая команда запуска скрипта</string>
+    <string name="hint_command2">Текущая команда запуска скрипта:</string>
+</resources>

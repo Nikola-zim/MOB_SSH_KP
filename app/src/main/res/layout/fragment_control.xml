@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progress"-->
+<!--        style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="-6dp"-->
+<!--        android:indeterminate="true" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_to_shell_fragment"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="@string/btn_to_fragment_shell" />
+
+            <Button
+                android:id="@+id/stop_machine"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/stop_machine" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonforward"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custombutton1"
+                app:cornerRadius="24dp"
+                app:srcCompat="@drawable/ic_baseline_arrow_upward_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonleft"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/custombutton1"
+                app:cornerRadius="24dp"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            <ImageButton
+                android:id="@+id/buttonright"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/custombutton1"
+                app:cornerRadius="24dp"
+                app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custombutton1"
+                app:cornerRadius="24dp"
+                app:srcCompat="@drawable/ic_baseline_arrow_downward_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/shellfragment">
+    <fragment
+        android:id="@+id/controlFragment"
+        android:name="com.draco.ssh.views.ControlFragment"
+        android:label="ControlFragment" >
+        <action
+            android:id="@+id/action_controlFragment_to_shellfragment"
+            app:destination="@id/shellfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shellfragment"
+        android:name="com.draco.ssh.views.shellfragment"
+        android:label="fragment_shell"
+        tools:layout="@layout/fragment_shell" >
+        <action
+            android:id="@+id/action_shellfragment_to_controlFragment"
+            app:destination="@id/controlFragment" />
+    </fragment>
+</navigation>

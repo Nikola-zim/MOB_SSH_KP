@@ -1,5 +1,16 @@
-# SSH
-A simple, non-interactive Android SSH client.
+КРАТКОЕ СОДЕРЖАНИЕ
+В интегрированной среде разработке Android Studio на языке Java разработано
+приложение для дистанционного управления роботом.
+Приложение дает возможность подключения к серверу по SSH-протоколу,
+сохранению и отправки команд. Также в специальном окне(фрагменте) представлены
+основные элементы управления.
 
-# Why?
-There's plenty of SSH clients out there, but I was never satisfied with the available selection. Some use in-app purchases, some have ads, some have UI's that date back years. Termux was one of the most promising SSH clients available, but I wanted something that felt more natural on a mobile device. It doesn't need to have fancy features, just a simple shell that can let me remotely manage my servers.
+ОПИСАНИЕ АРХИТЕКТУРЫ ПРОЕКТА
+Приложение построено на архитектуре MVVM, viewModel для двух
+активностей представлены скиптами LoginActivityViewModel.kt,
+ShellActivityViewModel.kt. Shell и SingleLiveEvent вспомогательные скрипты,
+предназначенные для настройки параметров соединения. LoginActivity –
+представление активности для входа (установки подключения по SSH);
+ShellActivity – представление активности для работы с терминалом, в этой
+активности есть два фрагмента: shellfragment.kt для редактирования команд и
+controlfragment.kt для управления роботом. 
